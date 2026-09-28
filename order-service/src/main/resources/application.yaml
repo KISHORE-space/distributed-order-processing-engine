@@ -1,3 +1,18 @@
 spring:
-  application:
-    name: order-service 
+  datasource:
+     url: jdbc:postgresql://localhost:5432/order_service_db
+     username: postgres
+     password: password
+     drive-class-name: org.postgresql.Drive 
+
+  jpa:
+     hibernate:
+       ddl-auto: validate
+
+  flayway:
+    enable: true 
+    location: classpath:db/migration
+
+
+
+
